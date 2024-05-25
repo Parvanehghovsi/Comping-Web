@@ -181,7 +181,6 @@ html {
 ::after,
 ::before {
   box-sizing: inherit;
-  cursor: none;
 }
 body {
   line-height: 1.6;
@@ -353,7 +352,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  cursor: none;
 }
 .nav__btn--line,
 .nav__btn--line::after,
@@ -496,7 +495,7 @@ body {
   width: 4rem;
   height: 4rem;
   border-radius: 1.5rem;
-  cursor: pointer;
+  cursor: none;
 }
 .place__price {
   position: absolute;
@@ -611,7 +610,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: none;
   box-shadow: 0 0 1.5rem rgba(231, 111, 81, 0.4);
 }
 .newsletter__img {
@@ -694,7 +693,9 @@ body {
   }
 }
 @media (min-width: 768px) {
-  * {
+  .newsletter__submit,
+  .place__like,
+  .nav__btn {
     cursor: pointer;
   }
   .container {
